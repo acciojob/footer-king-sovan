@@ -34,6 +34,13 @@ footer {
   color: #fff;
 }
 
+.media-icons {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center; 
+}
+
+
 .media-icons a {
   margin-right: 20px;
   font-size: 1.5rem;
