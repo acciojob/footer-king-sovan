@@ -1,1 +1,64 @@
-/* your code here */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+}
+
+footer{
+	background-color: black;
+	color: white;
+	padding: 0 20px;
+}
+
+.content{
+	max-width: 1200px;
+	margin: auto;
+	padding: 0 20px;
+}
+
+.top{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.logo-details . logo_name {
+	font-size: 2rem;
+	font-weight: bold;
+	color: white;
+}
+
+.media-icons a{
+	margin-right: 20px;
+	font-size: 1.5rem;
+	color: white;
+	transition: 0.5s;
+}
+
+.media-icons a:hover{
+	color: #f39c12;
+}
+
+.link-boxes{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+	flex-wrap: wrap;
+}
+
+.link-boxes .box {
+	width: 33%;
+}
+
+.link-boxes h2{
+	font-size: 1.5rem;
+	margin-bottom: 10px;
+	color: white;
+}
+
