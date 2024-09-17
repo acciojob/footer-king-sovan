@@ -1,64 +1,120 @@
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-	font-family: Arial, sans-serif;
-	line-height: 1.6;
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
 }
 
-footer{
-	background-color: black;
-	color: white;
-	padding: 0 20px;
+footer {
+  background-color: #111;
+  color: #fff;
+  padding: 40px 0;
 }
 
-.content{
-	max-width: 1200px;
-	margin: auto;
-	padding: 0 20px;
+.content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
 }
 
-.top{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.logo-details . logo_name {
-	font-size: 2rem;
-	font-weight: bold;
-	color: white;
+.logo-details .logo_name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
 }
 
-.media-icons a{
-	margin-right: 20px;
-	font-size: 1.5rem;
-	color: white;
-	transition: 0.5s;
+.media-icons a {
+  margin-right: 20px;
+  font-size: 1.5rem;
+  color: #fff;
+  transition: 0.5s;
 }
 
-.media-icons a:hover{
-	color: #f39c12;
+.media-icons a:hover {
+  color: #f39c12;
 }
 
-.link-boxes{
-	display: flex;
-	justify-content: space-between;
-	margin-top: 30px;
-	flex-wrap: wrap;
+.link-boxes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  flex-wrap: wrap;
 }
 
 .link-boxes .box {
-	width: 33%;
+  width: 33%;
 }
 
-.link-boxes h2{
-	font-size: 1.5rem;
-	margin-bottom: 10px;
-	color: white;
+.link-boxes h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #fff;
 }
 
+.link-boxes a {
+  display: block;
+  color: #aaa;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.link-boxes a:hover {
+  color: #f39c12;
+}
+
+/* Updated Bottom Details */
+.bottom-details {
+  margin-top: 40px;
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+.bottom-details .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #aaa;
+}
+
+.bottom-details .text span,
+.bottom-details .text a {
+  font-size: 1rem;
+  color: #aaa;
+  text-decoration: none;
+}
+
+.bottom-details .text a:hover {
+  color: #f39c12;
+}
+
+@media (max-width: 768px) {
+  .top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .link-boxes .box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .bottom-details .text {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bottom-details .text span {
+    margin-bottom: 10px;
+  }
+}
